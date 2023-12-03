@@ -9,7 +9,7 @@ to_read_list = []
 
 x = 0
 
-with open('mangi.json', 'r+') as mangas:
+with open('../mangi.json', 'r+') as mangas:
     mangas_loaded = json.load(mangas)
     while x < len(mangas_loaded['mangas']):
         changed = False
@@ -46,6 +46,7 @@ with open('mangi.json', 'r+') as mangas:
                     to_read_list.append({"name": mangas_loaded["mangas"][0]['name'],
                                          "chapters": (chapters - mangas_loaded['mangas'][0]['chapters']),
                                          "link": mangas_loaded['mangas'][0]['link']})
+
                 else:
                     continue
 

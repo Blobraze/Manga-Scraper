@@ -11,7 +11,7 @@ to_read_list = []
 
 x = 0
 
-with open('mangi.json', 'r+') as mangas:
+with open('../mangi.json', 'r+') as mangas:
     mangas_loaded = json.load(mangas)
     print(len(mangas_loaded['mangas']))
     for x in range(0, len(mangas_loaded['mangas'])):
