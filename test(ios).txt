@@ -1,0 +1,5 @@
+flet create <nazwa folderu z aplikacja>
+cd <nazwa folderu z aplikacja>
+flet run --ios
+
+zeskanuj kod aparatem i otworz w aplikacji flet

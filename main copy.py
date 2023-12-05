@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import flet as ft
 
-URL = "https://asuratoon.com/manga/list-mode/"
+'''URL = "https://asuratoon.com/manga/list-mode/"
 
 page = requests.get(URL)
 
@@ -23,13 +23,12 @@ for title in titles:
     print(f'{x}. {title}')
     x += 1
 
-'''option = input("Choose manga: ")
+option = input("Choose manga: ")
 print(links[int(option)-1])'''
 
 def main(page: ft.Page):
-    for title in titles:
-        t = ft.Text(value=title + '\n' + links[titles.index(title)], color="green")
-        page.controls.append(t)
+    t = ft.Text(value="Hello, world!", color="green")
+    page.controls.append(t)
     page.update()
 
 ft.app(target=main)
