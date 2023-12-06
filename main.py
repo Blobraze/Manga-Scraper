@@ -18,15 +18,16 @@ for blix in comic_links_list:
         links.append(comic["href"])
         titles.append(comic.text)
 
-x = 1
+'''x = 1
 for title in titles:
     print(f'{x}. {title}')
-    x += 1
+    x += 1'''
 
 '''option = input("Choose manga: ")
 print(links[int(option)-1])'''
 
 def main(page: ft.Page):
+    page.theme_mode = ft.ThemeMode.DARK
     for title in titles:
         t = ft.Text(value=title + '\n' + links[titles.index(title)], color="green")
         page.controls.append(t)
